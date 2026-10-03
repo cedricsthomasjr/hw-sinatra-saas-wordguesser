@@ -31,7 +31,7 @@ class WordGuesserGame
   end
 
   def check_win_or_lose
-    if !@word.empty? && word_with_guesses.downcase == @word.downcase
+    if word_with_guesses == @word
       :win
     elsif @wrong_guesses.length >= 7
       :lose
